@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:gravity="right|center_vertical"
+    android:layout_width="60dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/colorTextG"
+    android:layout_height="20dp">
+    <TextView
+        android:id="@+id/tv_flavor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="微微辣"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp"
+        />
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:background="@mipmap/icon_m_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</LinearLayout>

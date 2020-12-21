@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="355dp">
+    <RelativeLayout
+        android:background="@drawable/bg_dl_spec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"> <ImageView
+        android:id="@+id/iv_close"
+        android:background="@mipmap/icon_close"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/right_dish_item"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/right_dish_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品名称"
+                android:textColor="@color/colorMain"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/tv_stock"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="库存：1024"
+                android:textColor="@color/colorMain"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/tv_price"  android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥5"
+                android:textColor="@color/colorBGItemLeft"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rv_spec"
+    android:layout_above="@+id/layout_bottom"
+    android:layout_below="@+id/right_dish_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="52dp">
+            <RelativeLayout
+                android:id="@+id/layout_ok"
+                android:background="@drawable/bg_ok"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/right_dish_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选好了"
+                    android:textColor="@color/colorBGItemLeft"
+                    android:textSize="16sp"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+   </RelativeLayout>
+</LinearLayout>

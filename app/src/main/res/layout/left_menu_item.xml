@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_menu_item"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/selector_item_select"
+    android:clickable="true"
+
+    >
+<View
+    android:id="@+id/view_line"
+    android:background="@drawable/item_bg_left_line"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="10dp"
+    android:layout_width="3dp"
+    android:layout_height="12dp"/>
+    <TextView
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/left_menu_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="菜单名"
+        android:textSize="15sp"
+        android:textColor="@drawable/text_color_left_menu"/>
+</RelativeLayout>

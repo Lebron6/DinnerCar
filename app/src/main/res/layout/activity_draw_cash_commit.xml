@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/view_status_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_margin_top"
+                android:layout_alignParentTop="true"
+                android:visibility="visible" />
+
+            <include layout="@layout/titlebar" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_apply" />
+<LinearLayout
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_apply" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/iv_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现申请中"
+            android:textColor="#ff2b2c44"
+            android:textSize="30sp"
+            />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预计2个工作日内到账，请耐心等待。"
+        android:textColor="#ff585974"
+        android:textSize="14sp"
+        />
+
+</LinearLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_back"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:text="返回"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/small_red_circle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>

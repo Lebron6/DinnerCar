@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="85dp">
+    <LinearLayout
+
+        android:id="@+id/right_dish_item"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="84.5dp">
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"   android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:id="@+id/right_dish_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品名称"
+                android:textColor="@color/colorMain"
+                android:textSize="16sp"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_stock"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="库存：1024"
+                    android:textColor="@color/colorMain"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/tv_discount"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(满100减4)"
+                    android:textColor="#ffbfc0d1"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/right_dish_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥5"
+                    android:textColor="@color/colorBGItemLeft"
+                    android:textSize="16sp"
+                    />
+                <ImageView  android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/right_dish_account"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/right_dish_remove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:src="@mipmap/icon_reduce" />
+                <TextView  android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/right_dish_add"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/right_dish_account"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="1"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlack" />
+                <ImageView  android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/right_dish_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:src="@mipmap/icon_add" />
+            </RelativeLayout>
+        </LinearLayout>
+</LinearLayout>
+    <View
+        android:background="@color/colorBGGray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+</LinearLayout>

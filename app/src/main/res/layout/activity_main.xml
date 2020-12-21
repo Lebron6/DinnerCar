@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+    <TextView
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:id="@+id/view_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_margin_top"
+        />
+    <com.resttcar.dh.widget.CustomViewPager
+        android:id="@+id/vp_content"
+        android:layout_below="@+id/view_status_bar"
+        android:layout_above="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.7"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_order"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/tab_order_selector"
+            android:text="订单" />
+
+        <RadioButton
+            android:id="@+id/rb_cash"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/tab_cash_seector"
+            android:text="收银台" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/tab_my_selector"
+            android:text="我的" />
+
+    </RadioGroup>
+</RelativeLayout>

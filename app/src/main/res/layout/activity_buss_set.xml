@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_margin_top"
+        android:layout_alignParentTop="true"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/titlebar" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/colorBGGray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_marginTop="40dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="现场营业中"
+            android:textColor="@color/colorGreen"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/tv_close"
+            android:textSize="16sp"
+            android:background="@drawable/bg_close_shop"
+            android:textColor="@color/colorMain"
+            android:gravity="center"
+            android:text="打烊"
+            android:layout_marginTop="30dp"
+            android:layout_width="281dp"
+            android:layout_height="51dp" />
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打烊后，餐车将无法再接收新订单。"
+            android:textColor="@color/colorLine"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+</LinearLayout>

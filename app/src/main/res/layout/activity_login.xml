@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="88dp"
+        android:text="餐车商户端登录"
+        android:textColor="@color/colorMain"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:text="账号"
+        android:textColor="#ff2b2c44"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="left|center_vertical"
+            android:hint="请输入用户名或手机号"
+            android:textSize="16sp"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColor="@color/colorLine"
+            android:textColorHint="@color/colorLine"
+            android:textCursorDrawable="@drawable/edit_cursor_theme" />
+        <View
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="密码"
+        android:textColor="#ff2b2c44"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+    <EditText
+        android:layout_toLeftOf="@+id/cb_show_password"
+        android:id="@+id/et_password"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="left|center_vertical"
+        android:hint="请输入登录密码"
+        android:textSize="16sp"
+        android:background="@null"
+        android:singleLine="true"
+        android:textColor="@color/colorLine"
+        android:textColorHint="@color/colorLine"
+        android:textCursorDrawable="@drawable/edit_cursor_theme" />
+    <CheckBox
+        android:id="@+id/cb_show_password"
+        android:inputType="textPassword"
+        style="@style/PasswordCheckboxTheme"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+        <View
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_bg_text_stroke"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+</LinearLayout>

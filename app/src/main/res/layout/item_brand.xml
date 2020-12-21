@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:gravity="center_vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/bg_item_order"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="102dp">
+<ImageView
+    android:layout_centerVertical="true"
+    android:id="@+id/iv_goods_pic"
+    android:layout_marginLeft="10dp"
+    android:layout_width="72dp"
+    android:layout_height="72dp" />
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_goods_pic"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名称"
+            android:textColor="@color/colorMain"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推荐价格：1024元"
+            android:textColor="@color/colorMain"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv_goods_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属分类：茶饮"
+            android:textColor="@color/colorMain"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorWhite"
+        android:layout_marginRight="10dp"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        android:background="@drawable/btn_bg_text_stroke"
+        android:gravity="center"
+        android:text="添加到餐车"
+        android:layout_width="70dp"
+        android:layout_height="24dp" />
+    <TextView
+        android:id="@+id/tv_already_Add"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已添加"
+        android:textColor="@color/colorTextG"
+        android:textSize="10sp"
+        />
+</RelativeLayout>
+</LinearLayout>
